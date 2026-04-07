@@ -54,20 +54,20 @@ const siteData = {
         {
           title: "BenQ ZOWIE Mouse Coating Improvement",
           category: "Product Management",
-          description: "Transformed fragmented market signals and user insights into actionable strategies for mouse coating improvements. Influenced product development and strengthened ZOWIE's market positioning through competitive analysis.",
-          link: "#"
+          description: "Developed a multi-platform KOC intelligence framework to monitor competitive sentiment and user behavior across global niche communities, driving data-backed insights for product roadmap optimization.",
+          link: "https://docs.google.com/spreadsheets/d/1Hxjl_VZLgHrPAMqL6CF7m4hg6_HxHQSCe6ZW_IH4ONI/edit?gid=0#gid=0"
         },
         {
           title: "By the Creek Festival Campaign (VU Amsterdam)",
           category: "Marketing Strategy",
           description: "Developed a full branding and marketing campaign for a music festival. Executed campaign ideation and production of the pitch video. Awarded 1st Place (Highest Grade).",
-          link: "#"
+          link: "https://docs.google.com/document/d/1-8cA3doSl1qxAGe7DfMKq7EJ6D2hn_x19p0lrPuWZks/edit?tab=t.2v0sbdiibj5g"
         },
         {
           title: "FIXbrigade Brand Strategy (VU Amsterdam)",
           category: "Strategic Consulting",
           description: "Designed a multi-stakeholder marketing campaign for a social initiative addressing energy poverty. Awarded 2nd Place for strong strategic insights.",
-          link: "#"
+          link: "https://docs.google.com/document/d/1Xo6Epw1NHFdjtfM043PBb_5Sbfv-SJq-oSrOa1wkGLw/edit?pli=1&tab=t.0"
         }
       ]
     },
@@ -148,20 +148,20 @@ const siteData = {
         {
           title: "BenQ ZOWIE 滑鼠塗層改良",
           category: "產品管理",
-          description: "將零散的市場訊號與用戶洞察轉化為滑鼠塗層改良的可行策略。透過競爭對手分析影響產品開發，並強化 ZOWIE 的市場地位。",
-          link: "#"
+          description: "開發了多平台 KOC 情報框架，用以監測全球利基社群中的競爭對手情緒與用戶行為，為產品開發藍圖優化提供數據支持的見解。",
+          link: "https://docs.google.com/spreadsheets/d/1Hxjl_VZLgHrPAMqL6CF7m4hg6_HxHQSCe6ZW_IH4ONI/edit?gid=0#gid=0"
         },
         {
           title: "By the Creek 音樂節行銷企劃 (VU Amsterdam)",
           category: "行銷策略",
           description: "為荷蘭音樂節開發完整的品牌與行銷活動。負責活動構思、腳本撰寫、拍攝與影片剪輯。榮獲該項目第一名（最高分）。",
-          link: "#"
+          link: "https://docs.google.com/document/d/1-8cA3doSl1qxAGe7DfMKq7EJ6D2hn_x19p0lrPuWZks/edit?tab=t.2v0sbdiibj5g"
         },
         {
           title: "FIXbrigade 品牌策略顧問 (VU Amsterdam)",
           category: "策略顧問",
           description: "為解決能源貧窮的社會倡議設計多方利害關係人行銷活動。因深刻的策略洞察與執行力榮獲第二名。",
-          link: "#"
+          link: "https://docs.google.com/document/d/1Xo6Epw1NHFdjtfM043PBb_5Sbfv-SJq-oSrOa1wkGLw/edit?pli=1&tab=t.0"
         }
       ]
     },
