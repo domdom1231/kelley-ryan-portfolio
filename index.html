@@ -234,7 +234,12 @@
         }
 
         function openModal(type, id) {
-            const data = siteData[currentLang][type].items.find(i => i.id === id);
+            let data;
+            if (type === 'experience') {
+                data = siteData[currentLang].experience.items.find(i => i.id === id);
+            }
+            if (!data) return;
+            
             const content = document.getElementById('modal-content');
             content.innerHTML = `
                 <div class="text-luxury-accent text-sm font-bold tracking-widest uppercase mb-4">${data.period}</div>
