@@ -233,30 +233,37 @@
         }
 
         function openModal(type, id) {
-            console.log('Opening modal for:', type, id); // Debug log
-            let data;
-            if (type === 'experience') {
-                data = siteData[currentLang].experience.items.find(i => i.id === id);
-            } else if (type === 'latestProjects') {
-                data = siteData[currentLang].latestProjects.items.find(i => i.id === id);
+            console.log('Attempting to open modal:', type, id);
+            
+            // Explicitly map all data keys to search correctly
+            const section = siteData[currentLang][type];
+            if (!section || !section.items) {
+                console.error('Section not found:', type);
+                return;
             }
+
+            const data = section.items.find(i => i.id === id);
             
             if (!data) {
-                console.error('Data not found for:', type, id);
-                return;
+                console.error('Data item not found for id:', id);
+                // Fallback: try searching in the other language just in case
+                const otherLang = currentLang === 'en' ? 'zh' : 'en';
+                const fallbackData = siteData[otherLang][type].items.find(i => i.id === id);
+                if (!fallbackData) return;
+                data = fallbackData;
             }
             
             const content = document.getElementById('modal-content');
-            const title = data.role || data.title;
-            const sub = data.company || data.category;
-            const linkHtml = data.link && data.link !== '#' ? `<div class="mt-8"><a href="${data.link}" target="_blank" class="inline-block bg-luxury-text text-white px-6 py-3 rounded-full text-sm font-medium">View Project Reference</a></div>` : '';
+            const title = data.role || data.title || "Detail";
+            const sub = data.company || data.category || "";
+            const linkHtml = (data.link && data.link !== '#') ? `<div class="mt-8"><a href="${data.link}" target="_blank" class="inline-block bg-luxury-text text-white px-6 py-3 rounded-full text-sm font-medium">View Project Reference</a></div>` : '';
 
             content.innerHTML = `
-                <div class="text-luxury-accent text-sm font-bold tracking-widest uppercase mb-4">${data.period || data.category}</div>
+                <div class="text-luxury-accent text-sm font-bold tracking-widest uppercase mb-4">${data.period || data.category || ""}</div>
                 <h4 class="text-3xl font-serif text-luxury-text mb-2">${title}</h4>
                 <div class="text-xl text-luxury-muted mb-8">${sub}</div>
                 <div class="h-px bg-luxury-border mb-8"></div>
-                <div class="text-lg leading-relaxed text-luxury-muted font-light">${data.fullDesc}</div>
+                <div class="text-lg leading-relaxed text-luxury-muted font-light prose">${data.fullDesc || "No description available."}</div>
                 ${linkHtml}
             `;
             document.getElementById('modal').classList.remove('hidden');
