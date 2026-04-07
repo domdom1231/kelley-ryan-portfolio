@@ -52,21 +52,27 @@ const siteData = {
       title: "Latest Projects",
       items: [
         {
+          id: "project-benq",
           title: "BenQ ZOWIE Mouse Coating Improvement",
           category: "Product Management",
-          description: "Developed a multi-platform KOC intelligence framework to monitor competitive sentiment and user behavior across global niche communities, driving data-backed insights for product roadmap optimization.",
+          description: "Developed a multi-platform KOC intelligence framework to monitor competitive sentiment and user behavior.",
+          fullDesc: "<strong>Role:</strong> Product Strategy & Insights Intern<br><br><strong>Challenges & Achievements:</strong> Faced the challenge of fragmented market signals across diverse global communities. Developed a structured KOC intelligence framework to monitor competitor sentiment. Successfully translated qualitative user feedback into actionable data points for the product roadmap.<br><br><strong>Takeaway:</strong> Mastery in bridging the gap between niche community feedback and large-scale product optimization.",
           link: "https://docs.google.com/spreadsheets/d/1Hxjl_VZLgHrPAMqL6CF7m4hg6_HxHQSCe6ZW_IH4ONI/edit?gid=0#gid=0"
         },
         {
+          id: "project-creek",
           title: "By the Creek Festival Campaign (VU Amsterdam)",
           category: "Marketing Strategy",
-          description: "Developed a full branding and marketing campaign for a music festival. Executed campaign ideation and production of the pitch video. Awarded 1st Place (Highest Grade).",
+          description: "Full branding and marketing campaign for a Dutch music festival. Awarded 1st Place.",
+          fullDesc: "<strong>Role:</strong> Lead Campaign Strategist & Creative Producer<br><br><strong>Challenges & Achievements:</strong> Needed to differentiate the festival in a saturated market with price-sensitive Gen Z. Executed full branding, including scripting and producing a high-impact pitch video. Awarded 1st place for strategic clarity.<br><br><strong>Takeaway:</strong> Effective branding requires a deep emotional connection with the target demographic, backed by creative execution.",
           link: "https://docs.google.com/document/d/1-8cA3doSl1qxAGe7DfMKq7EJ6D2hn_x19p0lrPuWZks/edit?tab=t.2v0sbdiibj5g"
         },
         {
+          id: "project-fix",
           title: "FIXbrigade Brand Strategy (VU Amsterdam)",
           category: "Strategic Consulting",
-          description: "Designed a multi-stakeholder marketing campaign for a social initiative addressing energy poverty. Awarded 2nd Place for strong strategic insights.",
+          description: "Multi-stakeholder marketing campaign for energy poverty. Awarded 2nd Place.",
+          fullDesc: "<strong>Role:</strong> Strategic Consultant<br><br><strong>Challenges & Achievements:</strong> Navigating complex stakeholder interests in social entrepreneurship. Developed a scalable GTM strategy focusing on community adoption. Secured 2nd place in the Business Challenge.<br><br><strong>Takeaway:</strong> Social impact initiatives succeed when messaging is localized and community-driven.",
           link: "https://docs.google.com/document/d/1Xo6Epw1NHFdjtfM043PBb_5Sbfv-SJq-oSrOa1wkGLw/edit?pli=1&tab=t.0"
         }
       ]
@@ -146,21 +152,27 @@ const siteData = {
       title: "最新專案",
       items: [
         {
+          id: "project-benq",
           title: "BenQ ZOWIE 滑鼠塗層改良",
           category: "產品管理",
-          description: "開發了多平台 KOC 情報框架，用以監測全球利基社群中的競爭對手情緒與用戶行為，為產品開發藍圖優化提供數據支持的見解。",
+          description: "開發了多平台 KOC 情報框架，用以監測全球利基社群中的競爭對手情緒與用戶行為。",
+          fullDesc: "<strong>擔任角色：</strong> 產品策略與洞察實習生<br><br><strong>困難與成就：</strong> 面對全球社群中散亂的市場訊號，成功開發了一套結構化的 KOC 情報框架。將定性的用戶回饋精準轉化為產品開發藍圖的數據點，強化了 ZOWIE 的市場定位。<br><br><strong>核心收穫 (Takeaway)：</strong> 掌握了如何將利基社群的深度回饋轉化為大規模產品優化的核心能力。",
           link: "https://docs.google.com/spreadsheets/d/1Hxjl_VZLgHrPAMqL6CF7m4hg6_HxHQSCe6ZW_IH4ONI/edit?gid=0#gid=0"
         },
         {
+          id: "project-creek",
           title: "By the Creek 音樂節行銷企劃 (VU Amsterdam)",
           category: "行銷策略",
-          description: "為荷蘭音樂節開發完整的品牌與行銷活動。負責活動構思、腳本撰寫、拍攝與影片剪輯。榮獲該項目第一名（最高分）。",
+          description: "為荷蘭音樂節開發完整的品牌與行銷活動。榮獲該項目第一名（最高分）。",
+          fullDesc: "<strong>擔任角色：</strong> 首席活動策略師與創意製作<br><br><strong>困難與成就：</strong> 在飽和且對價格敏感的 Z 世代市場中建立品牌差異化。負責從品牌構思到 Pitch 影片製作的全過程。憑藉極高的策略清晰度與執行力榮獲第一名。<br><br><strong>核心收穫 (Takeaway)：</strong> 成功的品牌塑造需要在情感連結與數據驅動的執行之間取得完美平衡。",
           link: "https://docs.google.com/document/d/1-8cA3doSl1qxAGe7DfMKq7EJ6D2hn_x19p0lrPuWZks/edit?tab=t.2v0sbdiibj5g"
         },
         {
+          id: "project-fix",
           title: "FIXbrigade 品牌策略顧問 (VU Amsterdam)",
           category: "策略顧問",
-          description: "為解決能源貧窮的社會倡議設計多方利害關係人行銷活動。因深刻的策略洞察與執行力榮獲第二名。",
+          description: "為解決能源貧窮的社會倡議設計多方利害關係人行銷活動。榮獲第二名。",
+          fullDesc: "<strong>擔任角色：</strong> 策略顧問<br><br><strong>困難與成就：</strong> 在社會企業專案中協調複雜的利害關係人利益。開發了具擴展性的 GTM 策略並專注於社群採納。在商業挑戰賽中獲得第二名。<br><br><strong>核心收穫 (Takeaway)：</strong> 當訊息傳遞具備在地化且由社群驅動時，社會影響力專案才能真正成功。",
           link: "https://docs.google.com/document/d/1Xo6Epw1NHFdjtfM043PBb_5Sbfv-SJq-oSrOa1wkGLw/edit?pli=1&tab=t.0"
         }
       ]

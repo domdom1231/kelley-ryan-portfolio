@@ -206,11 +206,10 @@
             latestList.innerHTML = '';
             data.latestProjects.items.forEach(item => {
                 latestList.innerHTML += `
-                    <div class="bg-pinterest-bg border border-luxury-border p-8 rounded-3xl hover:shadow-pinterest-hover transition-all duration-300 flex flex-col h-full">
+                    <div onclick="openModal('latestProjects', '${item.id}')" class="cursor-pointer bg-pinterest-bg border border-luxury-border p-8 rounded-3xl hover:shadow-pinterest-hover transition-all duration-300 flex flex-col h-full">
                         <div class="text-luxury-accent text-xs font-bold tracking-widest uppercase mb-4">${item.category}</div>
                         <h4 class="text-2xl font-serif text-luxury-text mb-4">${item.title}</h4>
-                        <p class="text-luxury-muted font-light leading-relaxed flex-grow text-sm mb-6">${item.description}</p>
-                        <a href="${item.link}" class="text-sm font-medium text-luxury-text underline">Project Link</a>
+                        <p class="text-luxury-muted font-light leading-relaxed flex-grow text-sm mb-6">${item.description} <span class="text-luxury-accent underline ml-1">Detail</span></p>
                     </div>
                 `;
             });
@@ -237,16 +236,23 @@
             let data;
             if (type === 'experience') {
                 data = siteData[currentLang].experience.items.find(i => i.id === id);
+            } else if (type === 'latestProjects') {
+                data = siteData[currentLang].latestProjects.items.find(i => i.id === id);
             }
             if (!data) return;
             
             const content = document.getElementById('modal-content');
+            const title = data.role || data.title;
+            const sub = data.company || data.category;
+            const linkHtml = data.link ? `<div class="mt-8"><a href="${data.link}" target="_blank" class="inline-block bg-luxury-text text-white px-6 py-3 rounded-full text-sm font-medium">View Project Reference</a></div>` : '';
+
             content.innerHTML = `
-                <div class="text-luxury-accent text-sm font-bold tracking-widest uppercase mb-4">${data.period}</div>
-                <h4 class="text-3xl font-serif text-luxury-text mb-2">${data.role}</h4>
-                <div class="text-xl text-luxury-muted mb-8">${data.company}</div>
+                <div class="text-luxury-accent text-sm font-bold tracking-widest uppercase mb-4">${data.period || data.category}</div>
+                <h4 class="text-3xl font-serif text-luxury-text mb-2">${title}</h4>
+                <div class="text-xl text-luxury-muted mb-8">${sub}</div>
                 <div class="h-px bg-luxury-border mb-8"></div>
-                <p class="text-lg leading-relaxed text-luxury-muted font-light">${data.fullDesc}</p>
+                <div class="text-lg leading-relaxed text-luxury-muted font-light">${data.fullDesc}</div>
+                ${linkHtml}
             `;
             document.getElementById('modal').classList.remove('hidden');
             document.body.style.overflow = 'hidden';
