@@ -3,7 +3,8 @@ const siteData = {
     nav: {
       about: "About",
       experience: "Experience",
-      projects: "Leadership & Activities",
+      projects: "Leadership",
+      latest: "Projects",
       contact: "Contact",
       languageToggle: "中"
     },
@@ -11,126 +12,177 @@ const siteData = {
       greeting: "Hello, I'm",
       name: "Kelley Ryan (林芝虹)",
       title: "Marketing & Product Strategist",
-      subtitle: "Trilingual strategist with a deep obsession with global social media trends. Proven track record in driving community growth and managing global communities of 300k+ followers.",
-      cta: "View Experience"
+      subtitle: "Trilingual strategist specializing in global GTM, social media trends, and product innovation. NTU & VU Amsterdam Alumna.",
+      cta: "Explore Portfolio"
     },
     about: {
       title: "About Me",
-      description: "I am a Results-Oriented Strategist specializing in translating complex data-backed insights (3,000+ consumer data points) into winning Go-To-Market (GTM) strategies across NA, EMEA, and SEA markets. With a B.S. in Agricultural Economics from National Taiwan University and exchange experience at VU Amsterdam, I combine analytical rigor with creative visual storytelling. I am also an active short-video creator with multiple viral hits."
+      description: "I am a Results-Oriented Strategist specializing in translating complex data-backed insights into winning Go-To-Market (GTM) strategies across NA, EMEA, and SEA markets. With a background in Agricultural Economics and Business, I bridge the gap between sustainability, data, and consumer desire."
     },
     experience: {
       title: "Professional Experience",
       items: [
         {
+          id: "exp-benq",
           role: "Social Insights Analyst & Marketing Intern",
-          company: "BenQ Corporation | Taipei, Taiwan",
+          company: "BenQ Corporation",
           period: "Aug 2024 - Jul 2025",
-          description: "Audited market trends across NA/EMEA and synthesized 3,000+ consumer data points to identify visual preferences for global product launches. Leveraged Brandwatch to monitor global user sentiment for KOL strategies. Coordinated with marketing agencies to ensure creative assets resonated with North American aesthetics."
+          shortDesc: "Audited market trends across NA/EMEA and synthesized 3,000+ data points for global launches.",
+          fullDesc: "Audited market trends across NA/EMEA; synthesized 3,000+ consumer data points to identify visual preferences for global product launches. Leveraged Brandwatch to monitor global user sentiment, providing actionable insights for marketing assets and Influencer (KOL) strategies. Coordinated with marketing agencies to ensure creative assets resonated with North American (Reddit/Twitter) aesthetics."
         },
         {
+          id: "exp-taga",
+          role: "Event Marketing and Administrative Intern",
+          company: "Taiwan Art Gallery Association",
+          period: "Jun 2023 - Sep 2023",
+          shortDesc: "Supported ART Taichung and ART Taipei, managing data from 50+ galleries.",
+          fullDesc: "Supported the organization of ART Taichung and ART Taipei, managing data from 50+ Taiwanese and international galleries and artists. Coordinated VIP registration and meeting logistics for 200+ attendees. Designed marketing posters and promotional materials used across online platforms. Assisted in organizing 4+ gallery seminars, coordinating schedules and participant communication."
+        },
+        {
+          id: "exp-mugglenet",
           role: "Social Media Marketing Intern",
-          company: "MuggleNet | New York (Remote)",
+          company: "MuggleNet (New York - Remote)",
           period: "Jun 2023 - Jan 2024",
-          description: "Managed digital presence for 300,000+ followers. Optimized content formats (Reels/Static) based on real-time engagement and audience insights."
+          shortDesc: "Managed digital presence for 300,000+ followers.",
+          fullDesc: "Managed digital presence for 300,000+ followers; optimized content formats (Reels/Static) based on real-time engagement. Focused on community management and viral growth strategies."
+        }
+      ]
+    },
+    latestProjects: {
+      title: "Latest Projects",
+      items: [
+        {
+          title: "BenQ ZOWIE Mouse Coating Improvement",
+          category: "Product Management",
+          description: "Transformed fragmented market signals and user insights into actionable strategies for mouse coating improvements. Influenced product development and strengthened ZOWIE's market positioning through competitive analysis.",
+          link: "#"
+        },
+        {
+          title: "By the Creek Festival Campaign (VU Amsterdam)",
+          category: "Marketing Strategy",
+          description: "Developed a full branding and marketing campaign for a music festival. Executed campaign ideation and production of the pitch video. Awarded 1st Place (Highest Grade).",
+          link: "#"
+        },
+        {
+          title: "FIXbrigade Brand Strategy (VU Amsterdam)",
+          category: "Strategic Consulting",
+          description: "Designed a multi-stakeholder marketing campaign for a social initiative addressing energy poverty. Awarded 2nd Place for strong strategic insights.",
+          link: "#"
         }
       ]
     },
     projects: {
-      title: "Leaderships & Highlights",
+      title: "Leadership & Activities",
       items: [
         {
           name: "Indonesian Buddhist Taiwan Community",
-          category: "Content Strategy & Operations",
-          description: "Spearheaded a data-driven short-video strategy, achieving a 35% YoY increase in active engagement. Standardized internal SOPs for event management, reducing task friction by 40%."
+          category: "Content Strategy",
+          description: "Spearheaded a data-driven short-video strategy, achieving a 35% YoY increase in active engagement. Produced multiple viral hits (20k+ views)."
         },
         {
-          name: "VU Amsterdam Business Challenge",
-          category: "Strategic Consulting",
-          description: "Secured 2nd Place by developing a scalable GTM and market positioning strategy for a sustainable social enterprise (FIXbrigade)."
-        },
-        {
-          name: "Viral Content Creation",
-          category: "Social Media Savvy",
-          description: "Produced multiple viral short-video hits (20,000+ views), demonstrating deep mastery of visual storytelling and platform algorithm optimization."
-        },
-        {
-          name: "Core Competencies",
-          category: "Skills & Analytics",
-          description: "Expert in Data-Driven GTM Strategy, Brandwatch, Google Analytics, Advanced Excel, TikTok/IG Analytics, and Advanced CapCut/Reels editing. Trilingual: Indonesian, English, Mandarin."
+          name: "Agricultural Policy & Development",
+          category: "Research",
+          description: "Analyzed deforestation in the Indonesian palm oil industry and agricultural development pathways in Vietnam, evaluating trade-offs between commercial growth and responsible production."
         }
       ]
     },
     contact: {
       title: "Let's Connect",
-      description: "Available immediately. I'm open to discussing new projects, creative ideas, or marketing opportunities.",
+      description: "Available immediately for marketing or product roles.",
       email: "kelley150203@gmail.com",
       linkedin: "https://www.linkedin.com/in/kelleyryan15"
     }
   },
   zh: {
     nav: {
-      about: "關於我",
-      experience: "工作經歷",
-      projects: "領導與成就",
-      contact: "聯絡我",
+      about: "關於",
+      experience: "經歷",
+      projects: "成就",
+      latest: "專案",
+      contact: "聯絡",
       languageToggle: "EN"
     },
     hero: {
       greeting: "你好，我是",
       name: "Kelley Ryan (林芝虹)",
       title: "行銷與產品策略專家",
-      subtitle: "精通三語的策略分析師，對全球社群媒體趨勢有著深刻的洞察。擁有推動社群成長以及管理超過 30 萬粉絲全球社群的實戰經驗。",
-      cta: "查看經歷"
+      subtitle: "精通三語，專注於全球 GTM 策略、社群趨勢與產品創新。台大與阿姆斯特丹自由大學校友。",
+      cta: "查看作品集"
     },
     about: {
       title: "關於我",
-      description: "我是一名以結果為導向的策略專家，擅長將複雜的數據洞察（超過 3,000 個消費者數據點）轉化為北美、歐洲、中東及東南亞市場的致勝進入市場 (GTM) 策略。我畢業於台灣大學農業經濟學系，並曾在阿姆斯特丹自由大學交換，將嚴謹的分析能力與充滿創意的視覺說故事技巧完美結合。同時，我也是一名活躍的短影音創作者，曾打造多支破萬次觀看的爆款影片。"
+      description: "我是一名以結果為導向的策略專家，擅長將數據洞察轉化為北美、歐洲及東南亞市場的致勝進入市場 (GTM) 策略。具備農業經濟與商業背景，致力於搭起永續發展、數據與消費者需求之間的橋樑。"
     },
     experience: {
-      title: "工作經歷",
+      title: "專業經歷",
       items: [
         {
+          id: "exp-benq",
           role: "社群洞察分析與行銷實習生",
-          company: "明基電通 (BenQ) | 台灣台北",
-          period: "2024 年 8 月 - 2025 年 7 月",
-          description: "審查北美與歐洲市場趨勢，整合超過 3,000 個消費者數據點，為全球新產品發布定位視覺偏好。運用 Brandwatch 監測全球用戶情緒，為 KOL 策略提供具體洞察。與行銷代理商協調，確保創意素材符合北美（Reddit/Twitter）的受眾美學。"
+          company: "明基電通 (BenQ)",
+          period: "2024.08 - 2025.07",
+          shortDesc: "審查北美/歐洲市場趨勢，整合 3,000+ 數據點為全球發布定位視覺偏好。",
+          fullDesc: "審查北美與歐洲市場趨勢；整合超過 3,000 個消費者數據點，為全球新產品發布定位視覺偏好。運用 Brandwatch 監測全球用戶情緒，為行銷素材與 KOL 策略提供具體洞察。與行銷代理商協調，確保創意素材符合北美（Reddit/Twitter）受眾美學。"
         },
         {
+          id: "exp-taga",
+          role: "活動行銷與行政實習生",
+          company: "中華民國畫廊協會 (TAGA)",
+          period: "2023.06 - 2023.09",
+          shortDesc: "支援台中與台北藝術博覽會，管理 50+ 國內外畫廊數據。",
+          fullDesc: "支援台中藝術博覽會與台北國際藝術博覽會的組織工作，管理來自 50 多家台灣及國際畫廊與藝術家的數據，確保註冊效率。協調 200 多位貴賓的註冊與會議後勤。設計用於線上平台與印刷宣傳的行銷海報，並協助組織 4 場以上的畫廊講座。"
+        },
+        {
+          id: "exp-mugglenet",
           role: "社群媒體行銷實習生",
-          company: "MuggleNet | 紐約 (遠端)",
-          period: "2023 年 6 月 - 2024 年 1 月",
-          description: "管理超過 30 萬粉絲的數位社群。根據即時互動數據與受眾洞察，優化內容格式（包含連續短片與靜態貼文）。"
+          company: "MuggleNet (紐約遠端)",
+          period: "2023.06 - 2024.01",
+          shortDesc: "管理超過 30 萬粉絲的數位社群。",
+          fullDesc: "管理超過 30 萬粉絲的數位社群；根據即時互動數據優化內容格式（連續短片/靜態貼文）。專注於社群管理與病毒式成長策略。"
+        }
+      ]
+    },
+    latestProjects: {
+      title: "最新專案",
+      items: [
+        {
+          title: "BenQ ZOWIE 滑鼠塗層改良",
+          category: "產品管理",
+          description: "將零散的市場訊號與用戶洞察轉化為滑鼠塗層改良的可行策略。透過競爭對手分析影響產品開發，並強化 ZOWIE 的市場地位。",
+          link: "#"
+        },
+        {
+          title: "By the Creek 音樂節行銷企劃 (VU Amsterdam)",
+          category: "行銷策略",
+          description: "為荷蘭音樂節開發完整的品牌與行銷活動。負責活動構思、腳本撰寫、拍攝與影片剪輯。榮獲該項目第一名（最高分）。",
+          link: "#"
+        },
+        {
+          title: "FIXbrigade 品牌策略顧問 (VU Amsterdam)",
+          category: "策略顧問",
+          description: "為解決能源貧窮的社會倡議設計多方利害關係人行銷活動。因深刻的策略洞察與執行力榮獲第二名。",
+          link: "#"
         }
       ]
     },
     projects: {
-      title: "領導經驗與核心亮點",
+      title: "領導經驗與成就",
       items: [
         {
           name: "印尼佛教台灣社群 (ITBC)",
-          category: "內容策略與營運",
-          description: "主導數據驅動的短影音策略，實現活躍互動量年增 35%。標準化活動管理的內部 SOP，透過優化工作流程將任務摩擦減少了 40%。"
+          category: "內容策略",
+          description: "主導數據驅動的短影音策略，實現活躍互動量年增 35%。製作多支破 2 萬次觀看的爆紅影片。"
         },
         {
-          name: "阿姆斯特丹自由大學 商業挑戰賽",
-          category: "策略顧問",
-          description: "為永續社會企業 (FIXbrigade) 制定具擴展性的 GTM 與市場定位策略，榮獲商業挑戰賽第二名。"
-        },
-        {
-          name: "爆款短影音創作",
-          category: "社群媒體敏銳度",
-          description: "製作多支爆紅短影音（超過 2 萬次觀看），展現對視覺說故事及平台演算法優化的深度掌握。"
-        },
-        {
-          name: "核心競爭力與技能",
-          category: "數據與工具",
-          description: "專精數據驅動的 GTM 策略。熟練使用 Brandwatch、Google Analytics、進階 Excel、TikTok/IG 數據分析以及 CapCut 進階剪輯。精通印尼文、英文與中文。"
+          name: "農業政策與發展研究",
+          category: "研究分析",
+          description: "分析印尼棕櫚油產業的森林砍伐問題及越南農業發展路徑，評估商業成長與負責任生產之間的權衡。"
         }
       ]
     },
     contact: {
       title: "聯絡我",
-      description: "可隨時到職。非常樂意與您討論新的專案、創意點子或行銷合作機會。",
+      description: "可隨時到職，期待為您的團隊帶來價值。",
       email: "kelley150203@gmail.com",
       linkedin: "https://www.linkedin.com/in/kelleyryan15"
     }
