@@ -233,18 +233,23 @@
         }
 
         function openModal(type, id) {
+            console.log('Opening modal for:', type, id); // Debug log
             let data;
             if (type === 'experience') {
                 data = siteData[currentLang].experience.items.find(i => i.id === id);
             } else if (type === 'latestProjects') {
                 data = siteData[currentLang].latestProjects.items.find(i => i.id === id);
             }
-            if (!data) return;
+            
+            if (!data) {
+                console.error('Data not found for:', type, id);
+                return;
+            }
             
             const content = document.getElementById('modal-content');
             const title = data.role || data.title;
             const sub = data.company || data.category;
-            const linkHtml = data.link ? `<div class="mt-8"><a href="${data.link}" target="_blank" class="inline-block bg-luxury-text text-white px-6 py-3 rounded-full text-sm font-medium">View Project Reference</a></div>` : '';
+            const linkHtml = data.link && data.link !== '#' ? `<div class="mt-8"><a href="${data.link}" target="_blank" class="inline-block bg-luxury-text text-white px-6 py-3 rounded-full text-sm font-medium">View Project Reference</a></div>` : '';
 
             content.innerHTML = `
                 <div class="text-luxury-accent text-sm font-bold tracking-widest uppercase mb-4">${data.period || data.category}</div>
