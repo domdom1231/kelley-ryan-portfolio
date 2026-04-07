@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelley Ryan | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pinterest-bg': '#f9f9f8',
+                        'luxury-text': '#222222',
+                        'luxury-muted': '#666666',
+                        'luxury-accent': '#a68a64', /* Muted champagne/gold */
+                        'luxury-card': '#ffffff',
+                        'luxury-border': '#eaeaea'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    boxShadow: {
+                        'pinterest': '0 4px 20px rgba(0, 0, 0, 0.04)',
+                        'pinterest-hover': '0 8px 30px rgba(0, 0, 0, 0.08)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f9f9f8;
+            color: #222222;
+            scroll-behavior: smooth;
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-in forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            align-items: start;
+        }
+    </style>
+</head>
+<body class="antialiased font-sans selection:bg-luxury-accent selection:text-white">
+
+    <!-- Script loading data -->
+    <script src="./data.js"></script>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-lg border-b border-luxury-border">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-serif font-semibold tracking-tight text-luxury-text">KR.</a>
+            <div class="flex items-center space-x-8 text-sm tracking-wide font-medium">
+                <a href="#about" class="text-luxury-muted hover:text-luxury-accent transition-colors hidden md:block" id="nav-about"></a>
+                <a href="#experience" class="text-luxury-muted hover:text-luxury-accent transition-colors hidden md:block" id="nav-experience"></a>
+                <a href="#projects" class="text-luxury-muted hover:text-luxury-accent transition-colors hidden md:block" id="nav-projects"></a>
+                <a href="#contact" class="text-luxury-muted hover:text-luxury-accent transition-colors hidden md:block" id="nav-contact"></a>
+                <button id="lang-toggle" onclick="toggleLanguage()" class="bg-gray-100 text-luxury-text px-4 py-2 rounded-full hover:bg-gray-200 transition-colors shadow-sm"></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="min-h-screen flex items-center justify-center px-6 pt-20 relative">
+        <div class="max-w-4xl w-full text-center fade-in">
+            <p class="text-luxury-accent tracking-[0.2em] uppercase text-xs font-semibold mb-6" id="hero-greeting"></p>
+            <h1 class="text-5xl md:text-7xl font-serif mb-6 text-luxury-text leading-tight" id="hero-name"></h1>
+            <h2 class="text-2xl md:text-3xl font-light text-luxury-muted mb-8 italic" id="hero-title"></h2>
+            <p class="max-w-2xl mx-auto text-luxury-muted leading-relaxed mb-12" id="hero-subtitle"></p>
+            <a href="#experience" class="inline-block bg-luxury-text text-white px-8 py-4 rounded-full font-medium tracking-wide hover:bg-luxury-accent hover:shadow-pinterest transition-all duration-300" id="hero-cta"></a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto bg-white p-10 md:p-16 rounded-[2.5rem] shadow-pinterest">
+            <div class="text-center mb-8">
+                <h3 class="text-3xl font-serif text-luxury-text" id="about-title"></h3>
+            </div>
+            <p class="text-lg leading-relaxed text-luxury-muted font-light text-center" id="about-description"></p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex items-center gap-6 mb-12">
+                <h3 class="text-3xl font-serif text-luxury-text" id="experience-title"></h3>
+                <div class="h-px bg-luxury-border flex-1"></div>
+            </div>
+            <div class="space-y-8" id="experience-list">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex items-center gap-6 mb-12">
+                <h3 class="text-3xl font-serif text-luxury-text" id="projects-title"></h3>
+                <div class="h-px bg-luxury-border flex-1"></div>
+            </div>
+            <div class="masonry-grid" id="projects-list">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 px-6 text-center">
+        <div class="max-w-2xl mx-auto bg-white p-12 rounded-[2.5rem] shadow-pinterest">
+            <h3 class="text-4xl font-serif mb-6 text-luxury-text" id="contact-title"></h3>
+            <p class="text-luxury-muted mb-10 font-light leading-relaxed" id="contact-description"></p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a id="contact-email" href="" class="inline-block bg-luxury-text text-white px-8 py-4 rounded-full font-medium hover:bg-luxury-accent transition-all duration-300">Email Me</a>
+                <a id="contact-linkedin" href="" target="_blank" class="inline-block border border-luxury-border text-luxury-text px-8 py-4 rounded-full font-medium hover:bg-gray-50 transition-all duration-300">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-sm text-luxury-muted">
+        <p>&copy; <span id="year"></span> Kelley Ryan. All rights reserved.</p>
+    </footer>
+
+    <!-- Logic Script -->
+    <script>
+        document.getElementById('year').innerText = new Date().getFullYear();
+
+        let currentLang = 'en';
+
+        function renderContent() {
+            const data = siteData[currentLang];
+
+            // Nav
+            document.getElementById('nav-about').innerText = data.nav.about;
+            document.getElementById('nav-experience').innerText = data.nav.experience;
+            document.getElementById('nav-projects').innerText = data.nav.projects;
+            document.getElementById('nav-contact').innerText = data.nav.contact;
+            document.getElementById('lang-toggle').innerText = data.nav.languageToggle;
+
+            // Hero
+            document.getElementById('hero-greeting').innerText = data.hero.greeting;
+            document.getElementById('hero-name').innerText = data.hero.name;
+            document.getElementById('hero-title').innerText = data.hero.title;
+            document.getElementById('hero-subtitle').innerText = data.hero.subtitle;
+            document.getElementById('hero-cta').innerText = data.hero.cta;
+
+            // About
+            document.getElementById('about-title').innerText = data.about.title;
+            document.getElementById('about-description').innerText = data.about.description;
+
+            // Experience
+            document.getElementById('experience-title').innerText = data.experience.title;
+            const expList = document.getElementById('experience-list');
+            expList.innerHTML = '';
+            data.experience.items.forEach(item => {
+                expList.innerHTML += `
+                    <div class="bg-white p-8 rounded-3xl shadow-pinterest hover:shadow-pinterest-hover transition-all duration-300 flex flex-col md:flex-row md:gap-8 border border-gray-50">
+                        <div class="md:w-1/3 text-luxury-accent font-semibold text-sm pt-1 mb-3 md:mb-0">${item.period}</div>
+                        <div class="md:w-2/3">
+                            <h4 class="text-xl text-luxury-text font-serif mb-1">${item.role}</h4>
+                            <div class="text-luxury-muted text-sm font-medium mb-4">${item.company}</div>
+                            <p class="text-luxury-muted font-light leading-relaxed">${item.description}</p>
+                        </div>
+                    </div>
+                `;
+            });
+
+            // Projects
+            document.getElementById('projects-title').innerText = data.projects.title;
+            const projList = document.getElementById('projects-list');
+            projList.innerHTML = '';
+            data.projects.items.forEach(item => {
+                projList.innerHTML += `
+                    <div class="bg-pinterest-bg border border-luxury-border p-8 rounded-3xl hover:shadow-pinterest-hover transition-all duration-300 flex flex-col h-full">
+                        <div class="text-luxury-accent text-xs font-bold tracking-widest uppercase mb-4">${item.category}</div>
+                        <h4 class="text-2xl font-serif text-luxury-text mb-4">${item.name}</h4>
+                        <p class="text-luxury-muted font-light leading-relaxed flex-grow">${item.description}</p>
+                    </div>
+                `;
+            });
+
+            // Contact
+            document.getElementById('contact-title').innerText = data.contact.title;
+            document.getElementById('contact-description').innerText = data.contact.description;
+            document.getElementById('contact-email').href = "mailto:" + data.contact.email;
+            document.getElementById('contact-linkedin').href = data.contact.linkedin;
+            
+            // Document Lang
+            document.documentElement.lang = currentLang;
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'zh' : 'en';
+            renderContent();
+        }
+
+        // Initial render
+        renderContent();
+    </script>
+</body>
+</html>
