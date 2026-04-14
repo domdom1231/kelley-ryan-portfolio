@@ -11,40 +11,40 @@ const siteData = {
     hero: {
       greeting: "Hello, I'm",
       name: "Kelley Ryan (林芝虹)",
-      title: "Marketing & Product Strategist",
-      subtitle: "Trilingual strategist specializing in global GTM, social media trends, and product innovation. NTU & VU Amsterdam Alumna.",
-      cta: "Explore Portfolio"
+      title: "Business-Centric Data Analyst | Aspiring PM & Sales Specialist",
+      subtitle: "Turning market insights into scalable growth. An NTU Agricultural Economics alumna leveraging trilingual proficiency (ID/EN/CN) to bridge diverse markets across Taiwan, Indonesia, and Europe.",
+      cta: "See My Impact"
     },
     about: {
       title: "About Me",
-      description: "I am a Results-Oriented Strategist specializing in translating complex data-backed insights into winning Go-To-Market (GTM) strategies across NA, EMEA, and SEA markets. With a background in Agricultural Economics and Business, I bridge the gap between sustainability, data, and consumer desire."
+      description: "With a background in Agricultural Economics from National Taiwan University, I was trained to look at markets through the lens of data. However, my passion lies in translating those cold numbers into strategies that actually connect with people. Growing up with a trilingual background (Indonesian, English, Mandarin) and studying in Amsterdam, I've learned to navigate diverse cultural nuances. Whether it's analyzing 3,000+ user reviews or executing a local event, my goal is always the same: to turn complex insights into clear product narratives and actionable business growth."
     },
     experience: {
       title: "Professional Experience",
       items: [
         {
           id: "exp-benq",
-          role: "Social Insights Analyst & Marketing Intern",
+          role: "Social Insights Analyst & Product Marketing Intern",
           company: "BenQ Corporation",
           period: "Aug 2024 - Jul 2025",
-          shortDesc: "Audited market trends across NA/EMEA and synthesized 3,000+ data points for global launches.",
-          fullDesc: "Audited market trends across NA/EMEA; synthesized 3,000+ consumer data points to identify visual preferences for global product launches. Leveraged Brandwatch to monitor global user sentiment, providing actionable insights for marketing assets and Influencer (KOL) strategies. Coordinated with marketing agencies to ensure creative assets resonated with North American (Reddit/Twitter) aesthetics."
+          shortDesc: "Influenced R&D decisions by synthesizing 3,000+ global consumer data points into actionable product and KOL strategies.",
+          fullDesc: "<p>As a core member of the global marketing intelligence team, I bridged the gap between consumer feedback and product development for ZOWIE gaming products across NA, EMEA, and Asian markets.</p><ul class='list-disc pl-5 mt-4 mb-4 space-y-2'><li><strong>Data-Driven Product Strategy:</strong> Synthesized 3,000+ Amazon reviews and monitored social sentiment via Brandwatch. Proposed actionable insights that directly influenced product enhancement decisions, including specific R&D improvements to mouse coating designs.</li><li><strong>Global KOL & PR Operations:</strong> Evaluated engagement metrics to build a targeted database of 30+ tier-1 creators. Guided marketing teams in planning high-ROI affiliate and product seeding campaigns.</li></ul><p><strong>Key Takeaway:</strong> Demonstrated the ability to translate qualitative community noise into quantitative product specifications and targeted Go-To-Market strategies.</p>"
         },
         {
           id: "exp-taga",
-          role: "Event Marketing and Administrative Intern",
+          role: "Event Marketing & VIP Operations Intern",
           company: "Taiwan Art Gallery Association",
           period: "Jun 2023 - Sep 2023",
-          shortDesc: "Supported ART Taichung and ART Taipei, managing data from 50+ galleries.",
-          fullDesc: "Supported the organization of ART Taichung and ART Taipei, managing data from 50+ Taiwanese and international galleries and artists. Coordinated VIP registration and meeting logistics for 200+ attendees. Designed marketing posters and promotional materials used across online platforms. Assisted in organizing 4+ gallery seminars, coordinating schedules and participant communication."
+          shortDesc: "Orchestrated VIP logistics and managed stakeholder databases for 50+ international galleries at Taiwan's premier art fairs.",
+          fullDesc: "<p>Operating in a high-pressure, premium environment, I ensured seamless event execution and exceptional experiences for top-tier stakeholders at ART Taipei and ART Taichung.</p><ul class='list-disc pl-5 mt-4 mb-4 space-y-2'><li><strong>Stakeholder & VIP Management:</strong> Coordinated registration, scheduling, and logistics for 200+ high-net-worth attendees while managing complex operational data for 50+ international galleries.</li><li><strong>End-to-End Event Execution:</strong> Assisted in organizing 4 major gallery seminars and designed cross-platform promotional assets that significantly enhanced event visibility.</li></ul><p><strong>Key Takeaway:</strong> Mastered the art of balancing meticulous detail-orientation with premium client service in a fast-paced, multi-stakeholder environment.</p>"
         },
         {
           id: "exp-mugglenet",
-          role: "Social Media Marketing Intern",
+          role: "Global Community & Social Media Intern",
           company: "MuggleNet (New York - Remote)",
           period: "Jun 2023 - Jan 2024",
-          shortDesc: "Managed digital presence for 300,000+ followers.",
-          fullDesc: "Managed digital presence for 300,000+ followers; optimized content formats (Reels/Static) based on real-time engagement. Focused on community management and viral growth strategies."
+          shortDesc: "Catalyzed a 60% increase in average engagement for a global community of 300,000+ followers through data-driven content.",
+          fullDesc: "<p>Tasked with engaging a massive, passionate global fanbase, I utilized analytics to pivot content strategies and drive viral growth.</p><ul class='list-disc pl-5 mt-4 mb-4 space-y-2'><li><strong>Growth Hacking & Analytics:</strong> Analyzed weekly engagement data to refine content timing and tone via Buffer, resulting in a <strong>+60% engagement surge</strong> (averaging 4,000+ interactions per post).</li><li><strong>Brand Narrative & Campaign Execution:</strong> Developed agile, trend-aligned interactive campaigns while collaborating with remote teams to maintain strict brand consistency across a 300K+ follower ecosystem.</li></ul><p><strong>Key Takeaway:</strong> Proven ability to empathize with a target audience and leverage real-time data to engineer sustained community growth.</p>"
         }
       ]
     },
@@ -111,40 +111,40 @@ const siteData = {
     hero: {
       greeting: "你好，我是",
       name: "Kelley Ryan (林芝虹)",
-      title: "行銷與產品策略專家",
-      subtitle: "精通三語，專注於全球 GTM 策略、社群趨勢與產品創新。台大與阿姆斯特丹自由大學校友。",
-      cta: "查看作品集"
+      title: "具備商業思維的數據分析師 | 準產品經理與業務專家",
+      subtitle: "將市場洞察轉化為可擴展的成長動能。台大農經系畢業，運用印、英、中三語優勢搭起台灣、印尼與歐洲市場的橋樑。",
+      cta: "查看我的影響力"
     },
     about: {
       title: "關於我",
-      description: "我是一名以結果為導向的策略專家，擅長將數據洞察轉化為北美、歐洲及東南亞市場的致勝進入市場 (GTM) 策略。具備農業經濟與商業背景，致力於搭起永續發展、數據與消費者需求之間的橋樑。"
+      description: "在台大農經系的訓練下，我學會的不只是數據分析，更是如何從數字中洞察市場行為。我擅長在「邏輯分析」與「人心連結」的交界處發揮影響力。憑藉著印、英、中三語優勢以及在阿姆斯特丹的留學經驗，我致力於將碎片的市場訊號（如 3,000 多筆用戶評論）轉化為清晰的產品策略與具備說服力的業務提案。我的目標是成為一名專業的「轉譯者」，將複雜的數據轉化為能與全球市場接軌的商業價值。"
     },
     experience: {
       title: "專業經歷",
       items: [
         {
           id: "exp-benq",
-          role: "社群洞察分析與行銷實習生",
+          role: "社群洞察分析與產品行銷實習生",
           company: "明基電通 (BenQ)",
-          period: "2024.08 - 2025.07",
-          shortDesc: "審查北美/歐洲市場趨勢，整合 3,000+ 數據點為全球發布定位視覺偏好。",
-          fullDesc: "審查北美與歐洲市場趨勢；整合超過 3,000 個消費者數據點，為全球新產品發布定位視覺偏好。運用 Brandwatch 監測全球用戶情緒，為行銷素材與 KOL 策略提供具體洞察。與行銷代理商協調，確保創意素材符合北美（Reddit/Twitter）受眾美學。"
+          period: "2024年8月 - 2025年7月",
+          shortDesc: "分析 3,000+ 筆全球消費數據，直接賦能產品研發決策與 KOL 跨國行銷策略。",
+          fullDesc: "<p>作為全球市場情報團隊的核心成員，我負責搭建消費者回饋與 ZOWIE 電競產品開發之間的橋樑，橫跨北美、歐洲與亞洲市場。</p><ul class='list-disc pl-5 mt-4 mb-4 space-y-2'><li><strong>數據驅動產品策略：</strong> 分析 3,000+ 筆 Amazon 評論並利用 Brandwatch 監測社群情緒。提出具體洞察，成功影響產品優化決策（如滑鼠塗層設計的改良）。</li><li><strong>全球 KOL 與公關營運：</strong> 評估互動數據，建立包含 30+ 頂級創作者的精準資料庫，協助行銷團隊策劃高投資報酬率的產品公關與分潤計畫。</li></ul><p><strong>核心收穫 (Takeaway)：</strong> 展現了將「定性社群雜音」精準轉化為「定量產品規格」與商業策略的核心能力。</p>"
         },
         {
           id: "exp-taga",
-          role: "活動行銷與行政實習生",
-          company: "中華民國畫廊協會 (TAGA)",
-          period: "2023.06 - 2023.09",
-          shortDesc: "支援台中與台北藝術博覽會，管理 50+ 國內外畫廊數據。",
-          fullDesc: "支援台中藝術博覽會與台北國際藝術博覽會的組織工作，管理來自 50 多家台灣及國際畫廊與藝術家的數據，確保註冊效率。協調 200 多位貴賓的註冊與會議後勤。設計用於線上平台與印刷宣傳的行銷海報，並協助組織 4 場以上的畫廊講座。"
+          role: "活動行銷與 VIP 營運實習生",
+          company: "畫廊協會 (TAGA)",
+          period: "2023年6月 - 2023年9月",
+          shortDesc: "統籌台灣頂級藝術博覽會 200+ VIP 營運與 50+ 國際畫廊資料庫管理。",
+          fullDesc: "<p>在高壓且要求極致細節的頂級藝術產業環境中，我確保了 ART Taipei 與 ART Taichung 的完美執行與頂級客戶體驗。</p><ul class='list-disc pl-5 mt-4 mb-4 space-y-2'><li><strong>利益關係人與 VIP 管理：</strong> 協調 200+ 高淨值貴賓的註冊、會議與物流，並精準管理 50+ 國內外畫廊的複雜營運數據。</li><li><strong>端到端專案執行：</strong> 協助籌辦 4 場大型畫廊論壇，並設計跨平台行銷素材，大幅提升活動能見度。</li></ul><p><strong>核心收穫 (Takeaway)：</strong> 掌握在快節奏、多方利益關係人環境中，兼顧極致細心與高階客戶服務的營運藝術。</p>"
         },
         {
           id: "exp-mugglenet",
-          role: "社群媒體行銷實習生",
-          company: "MuggleNet (紐約遠端)",
-          period: "2023.06 - 2024.01",
-          shortDesc: "管理超過 30 萬粉絲的數位社群。",
-          fullDesc: "管理超過 30 萬粉絲的數位社群；根據即時互動數據優化內容格式（連續短片/靜態貼文）。專注於社群管理與病毒式成長策略。"
+          role: "全球社群與行銷實習生",
+          company: "MuggleNet (紐約 - 遠端)",
+          period: "2023年6月 - 2024年1月",
+          shortDesc: "透過數據驅動內容策略，帶動 30 萬+ 追蹤者社群的平均互動率成長 60%。",
+          fullDesc: "<p>負責管理龐大且高黏著度的全球粉絲社群，我利用數據分析靈活調整內容策略，推動社群病毒式成長。</p><ul class='list-disc pl-5 mt-4 mb-4 space-y-2'><li><strong>數據成長駭客：</strong> 分析每週互動數據以優化貼文時程與語氣，促使平均互動率<strong>飆升 60%</strong>（單篇貼文突破 4,000+ 次互動）。</li><li><strong>品牌敘事與活動企劃：</strong> 結合時事趨勢策劃高互動活動，並與遠端團隊協作，確保在 30 萬+ 粉絲的生態系中維持一致的品牌調性。</li></ul><p><strong>核心收穫 (Takeaway)：</strong> 證明能深度共情目標受眾，並具備利用即時數據策動社群持續成長的能力。</p>"
         }
       ]
     },
